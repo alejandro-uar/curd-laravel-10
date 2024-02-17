@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    @include('layouts.components.navbar')
     <a href="{{ route('note.create') }}">Create new note</a>
     <ul>
         @forelse($notes as $note)
@@ -18,7 +19,7 @@
         @endforelse
     </ul>
     
-    <h2>Taras</h2>
+    <h2>Tareas</h2>
     @foreach($notes as $note)
         <article>
             <p>{{ $note->description }}</p>
