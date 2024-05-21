@@ -1,8 +1,9 @@
 ### CRUD - LARAVEL 
 
 <p>
-Conociendo el fujo basico de trabajo de laravel v10, realizando asi mismo las operaciones basicas CRUD:
+    Conociendo el fujo basico de trabajo de laravel v10, realizando asi mismo las operaciones basicas CRUD:
 </p>
+
 - Create
 - Read
 - Update
@@ -10,7 +11,7 @@ Conociendo el fujo basico de trabajo de laravel v10, realizando asi mismo las op
 
 
 
-####READ
+#### READ
 
     <?php
         	public function index(): View
@@ -20,7 +21,7 @@ Conociendo el fujo basico de trabajo de laravel v10, realizando asi mismo las op
     		}
     ?>
 
-####CREATE
+#### CREATE
 
 	<?php
         	public function create(): View
@@ -42,7 +43,7 @@ Conociendo el fujo basico de trabajo de laravel v10, realizando asi mismo las op
 		}
 	?>
 
-####UPDATE
+#### UPDATE
 
 	<?php
 		public function edit($note): View
@@ -63,7 +64,7 @@ Conociendo el fujo basico de trabajo de laravel v10, realizando asi mismo las op
 		}
 	?>
 
-####DELETE
+#### DELETE
 
 	<?php
 		public function destroy($note): RedirectResponse
