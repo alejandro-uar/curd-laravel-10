@@ -14,20 +14,20 @@
 #### READ
 
     <?php
-        	public function index(): View
-    		{
-        		$notes = Note::all();
-        		return view('note.index', compact('notes'));
-    		}
+        public function index(): View
+    	{
+        	$notes = Note::all();
+        	return view('note.index', compact('notes'));
+    	}
     ?>
 
 #### CREATE
 
 	<?php
-        	public function create(): View
-    		{
-        		return view('note.create');
-    		}
+        public function create(): View
+    	{
+        	return view('note.create');
+    	}
 
 		public function store(Request $request): RedirectResponse
 		{
